@@ -220,7 +220,7 @@ public class MyStepdefs {
 
     @And("^contiue to add to basket$")
     public void contiue_to_add_to_basket() throws Throwable {
-
+        Assert.assertTrue(driver.findElement(By.linkText("Register")).getText().contains("Register"));
     }
 
     @Then("^item should be in basket$")
@@ -293,6 +293,11 @@ public class MyStepdefs {
 
     @And("^the logout link is displayed$")
     public void theLogoutLinkIsDisplayed() throws Throwable {
+
+    }
+
+    @And("^user can see homepage$")
+    public void userCanSeeHomepage() throws Throwable {
 
     }
 }

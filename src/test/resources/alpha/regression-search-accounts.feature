@@ -54,6 +54,7 @@ Feature: Regression pack - search and accounts module
     And login as existing user
     Then a welcome message is displayed
     And the logout link is displayed
+    And user can see homepage
 
   Scenario Outline: Search multiple
 
